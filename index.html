@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бесплатная помощь родителям</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,300;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="header wrapper">
+            <div class="logo">
+                <a href="https://sgspu.ru/" target=»_blank»>
+                    <img src="SGSPU.svg" alt="logo">
+                </a>
+                <div class="logo_par">
+                    <img src="Без имени.png" alt="Служба помощи родителям">
+                    <div class="logo_parText">
+                        <h5>Служба помощи родителям</h5>
+                        <p>Самарский государственный социально-педагогический унивеситет</p>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <a href="docs.html" target="_blank">Документы</a>
+                    </li>
+                    <li>
+                        <a href="arhiv.html" target="_blank">Архив</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="info">
+        <div class="wrapper info_Sec">
+            <div class="info_L_and_R">
+                <div class="info_l">
+                    <div class="info_text">
+                        <h1>Бесплатные консультации для родителей</h1>
+
+
+                        <div class="container">
+                            <div>
+                                <a href="#openModal"><button>Записаться</button></a>
+                            </div>
+                            <div id="openModal" class="modal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title"></h3>
+                                            <a href="#close" title="Close" class="close">×</a>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="mail.php" method="POST" id="feedbackForm">
+                                                
+                                                
+                                                <label for="name">ФИО:</label>
+                                                <input type="text" id="name" name="name" required>
+
+
+
+                                                <label for="phone">Номер телефона:</label>
+                                                <input type="tel" id="phone" name="phone">
+
+
+
+                                                <label for="email">Email:</label>
+                                                <input type="email" id="email" name="email" required>
+
+
+
+                                                <label for="theme">Выберите тему консультации:</label>
+                                                <select id="theme" name="theme" required>
+                                                    <option value="ThemeOne">Как выбрать спортивную секцию для ребенка
+                                                    </option>
+                                                    <option value="ThemeTwo">Что должен уметь ребенок для обучения
+                                                        чтению и письму</option>
+                                                    <option value="ThemeTree">Подготовка ребенка к школьному обучению
+                                                    </option>
+                                                    <option value="ThemeFour">Формирование оптимального двигательного
+                                                        режима работника</option>
+                                                    <option value="ThemeFive">Как ориентировка в пространстве влияет на
+                                                        письмо и чтение</option>
+                                                    <option value="ThemeSix">Что такое фонетический слух и для чего его
+                                                        лучше развивать</option>
+                                                </select>
+
+
+
+                                                <label for="tentacles">Возраст ребенка:</label>
+                                                <input type="number" id="tentacles" name="tentacles" min="0" max="100" required>
+
+
+
+
+                                                <label for="message">Сообщение:</label>
+                                                <textarea id="message" name="message"></textarea>
+
+
+
+                                                <button type="submit">Отправить</button>
+
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="info_time">
+                        <div class="info_time_l">
+                            <span>ПН-ПТ</span>
+                            <span>с 9:00-17:00</span>
+                        </div>
+                        <div class="info_time_r">
+                            <span>очно/онлайн</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info_rigth">
+                    <img src="Рисунок1.svg" alt="Образование">
+                    <span>На базе нашего универтитета работает "Служба помощи родителям". Мероприятие реализуется при
+                        поддержке Министерства просвещения в рамках Национального проекта "Образование". </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="foot">
+                <div class="logoMin">
+                    <img src="Рисунок2.svg" alt="">
+                    <span>
+                        МИНИСТЕРСТВО ПРОСВЕЩЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ
+                    </span>
+                </div>
+
+
+                <div class="adres">
+
+                    <div class="adres_vk">
+                        <a href="https://vk.com/advicesgsu" target=»_blank»><img src="vk_logo.png" alt=""></a>
+
+                        <span><a href="https://vk.com/advicesgsu" target=»_blank»>Страница службы</a></span>
+                    </div>
+
+
+
+
+
+                    <div class="adresHelp">
+                        <p>Адрес: г. Самара, ул. Блюхера, 25 (каб. 102)</p>
+                        <p>Телефон: 8-903-301-33-41 </p>
+                        <p>Электронная почта: kons-sgspu@mail.ru</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js.js"></script>
+</body>
+
+</html>
